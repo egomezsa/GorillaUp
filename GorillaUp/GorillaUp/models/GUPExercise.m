@@ -11,7 +11,7 @@
 
 @implementation GUPExercise 
 
-- (id)initWith: title:(NSString*)n sets:(int)s reps:(int)rps weight:(int)wt rest:(int)res
+- (id)initWithTitle:(NSString*)n sets:(int)s reps:(int)rps weight:(int)wt rest:(int)res
 {
     self = [super init];
   if(self){
@@ -24,9 +24,9 @@
   return self;
 }
 
-- (id)init
-{
-    return [self initWith: title:@"" sets:0 reps:0 weight:0 rest:0];
+- (id)init{
+
+    return [self initWithTitle:@"" sets:0 reps:0 weight:0 rest:0];
 }
 
 - (NSString*)instructions

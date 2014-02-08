@@ -18,7 +18,7 @@
 @property (nonatomic) int weight;
 
 
-- (id)initWith: title:(NSString*)n sets:(int)s reps:(int)rps weight:(int)wt rest:(int)res;
+- (id)initWithTitle:(NSString*)n sets:(int)s reps:(int)rps weight:(int)wt rest:(int)res;
 - (id)init;
 - (NSString*)instructions;
 
