@@ -1,0 +1,26 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Exercise 1</key>
+    <string>3,8,60,100</string>
+    <key>Exercise 2</key>
+    <string>5,15,30,40</string>
+    <key>Exercise 3</key>
+    <string>4,10,60,55</string>
+  </dict>
+  <dict>
+    <key>Routine A</key>
+    <array>
+      <string>Exercise 1</string>
+      <string>Exercise 2</string>
+    </array>
+    <key>Routine B</key>
+    <array>
+      <string>Exercise 2</string>
+      <string>Exercise 3</string>
+    </array>
+  </dict>
+</plist>
