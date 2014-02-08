@@ -100,10 +100,10 @@
             </objects>
             <point key="canvasLocation" x="128" y="-281"/>
         </scene>
-        <!--View Controller - Title-->
+        <!--Add Routine View Controller - Title-->
         <scene sceneID="b2f-Oc-xpt">
             <objects>
-                <viewController id="2F9-4d-tyq" sceneMemberID="viewController">
+                <viewController id="2F9-4d-tyq" customClass="GUPAddRoutineViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NQx-w3-rgX"/>
                         <viewControllerLayoutGuide type="bottom" id="ULC-Zx-oGH"/>
@@ -148,6 +148,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="BjN-Ta-aVb"/>
+                    <connections>
+                        <outlet property="doneButton" destination="yf0-Ou-wP8" id="VI8-3I-LBO"/>
+                        <outlet property="textField" destination="Zlz-YQ-0iT" id="xMn-0N-x4S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Hy-Nz-PYl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

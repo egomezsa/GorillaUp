@@ -9,10 +9,22 @@
 #import "GUPAddRoutineViewController.h"
 
 @interface GUPAddRoutineViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UIButton *doneButton;
 
 @end
 
 @implementation GUPAddRoutineViewController
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if (sender != self.doneButton) return;
+    if (self.textField.text.length > 0) {
+        self.newRoutine = [[GUPRoutine alloc] init];
+        self.toDoItem.itemName = self.textField.text;
+        self.toDoItem.completed = NO;
+    }
+}
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
