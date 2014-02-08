@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2810FDBC18A6B81000BEFC7A /* GUPExercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 2810FDBB18A6B81000BEFC7A /* GUPExercise.m */; };
 		78DDE38518A69C700012E154 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78DDE38418A69C700012E154 /* Foundation.framework */; };
 		78DDE38718A69C700012E154 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78DDE38618A69C700012E154 /* CoreGraphics.framework */; };
 		78DDE38918A69C700012E154 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78DDE38818A69C700012E154 /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2810FDBA18A6B81000BEFC7A /* GUPExercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUPExercise.h; sourceTree = "<group>"; };
+		2810FDBB18A6B81000BEFC7A /* GUPExercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUPExercise.m; sourceTree = "<group>"; };
 		78DDE38118A69C700012E154 /* GorillaUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GorillaUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78DDE38418A69C700012E154 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		78DDE38618A69C700012E154 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2810FDB918A6B81000BEFC7A /* models */ = {
+			isa = PBXGroup;
+			children = (
+				2810FDBA18A6B81000BEFC7A /* GUPExercise.h */,
+				2810FDBB18A6B81000BEFC7A /* GUPExercise.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
 		78DDE37818A69C700012E154 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +124,7 @@
 		78DDE38A18A69C700012E154 /* GorillaUp */ = {
 			isa = PBXGroup;
 			children = (
+				2810FDB918A6B81000BEFC7A /* models */,
 				78DDE39318A69C700012E154 /* GUPAppDelegate.h */,
 				78DDE39418A69C700012E154 /* GUPAppDelegate.m */,
 				78DDE39618A69C700012E154 /* Main.storyboard */,
@@ -250,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2810FDBC18A6B81000BEFC7A /* GUPExercise.m in Sources */,
 				78DDE39118A69C700012E154 /* main.m in Sources */,
 				78DDE39518A69C700012E154 /* GUPAppDelegate.m in Sources */,
 				78DDE39B18A69C700012E154 /* GUPViewController.m in Sources */,
@@ -461,6 +475,7 @@
 				78DDE3B518A69C700012E154 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		78DDE3B618A69C700012E154 /* Build configuration list for PBXNativeTarget "GorillaUpTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +484,7 @@
 				78DDE3B818A69C700012E154 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
