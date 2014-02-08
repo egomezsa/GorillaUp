@@ -11,13 +11,14 @@
 
 @interface GUPExercise : NSObject
 
-@property (copy,nonatomic) NSString *name;
-@property (copy,nonatomic) int numSets;
-@property (copy,nonatomic) int numReps;
-@property (copy,nonatomic) int restTime;
-@property (copy,nonatomic) float weight;
+@property (nonatomic) NSString * name;
+@property (nonatomic) int numSets;
+@property (nonatomic) int numReps;
+@property (nonatomic) int restTime;
+@property (nonatomic) int weight;
 
-- (id)initWith: name:(NSString*)n sets:(int)s reps:(int)rps weight:(int)wt rest:(int)res;
+
+- (id)initWith: title:(NSString*)n sets:(int)s reps:(int)rps weight:(int)wt rest:(int)res;
 - (id)init;
 - (NSString*)instructions;
 

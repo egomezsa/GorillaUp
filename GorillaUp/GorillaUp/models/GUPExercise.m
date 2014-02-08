@@ -7,13 +7,13 @@
 //  Copyright (c) 2014 BM1. All rights reserved.
 //
 
-#import <GUPExercise.h>
+#import "GUPExercise.h"
 
 @implementation GUPExercise 
 
-- (id)initWith: name:(NSString*)n sets:(int)s reps:(int)rps weight:(int)wt rest:(int)res
+- (id)initWith: title:(NSString*)n sets:(int)s reps:(int)rps weight:(int)wt rest:(int)res
 {
-  self = [super init]
+    self = [super init];
   if(self){
     self.name = n;
     self.numSets  = s;
@@ -26,7 +26,7 @@
 
 - (id)init
 {
-  return [self initWith: name:@"" sets:0 reps:0 weight:0 rest:0]
+    return [self initWith: title:@"" sets:0 reps:0 weight:0 rest:0];
 }
 
 - (NSString*)instructions
@@ -37,7 +37,7 @@
   NSString *pWeight = (self.weight == 1) ? @"" : @"s";
 
   //return "x set(s), y rep(s), z sec(s) rest, with w lb(s)."
-  return [NSString stringWithFormat:@"%@ set%@, %@ rep%@, %@ sec%@ rest, with %@ lb%@.",
+  return [NSString stringWithFormat:@"%d set%@, %d rep%@, %d sec%@ rest, with %d lb%@.",
     self.numSets, pSets,
     self.numReps, pReps,
     self.restTime, pRest,
