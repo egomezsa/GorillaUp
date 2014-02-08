@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2810FDBC18A6B81000BEFC7A /* GUPExercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 2810FDBB18A6B81000BEFC7A /* GUPExercise.m */; };
+		286008AB18A6F49F00C08F2F /* GUPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286008AA18A6F49F00C08F2F /* GUPTableViewController.m */; };
 		7895F9DF18A6C5080093D652 /* GUPRoutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7895F9DE18A6C5080093D652 /* GUPRoutine.m */; };
 		7895F9E218A6CD660093D652 /* GUPBank.m in Sources */ = {isa = PBXBuildFile; fileRef = 7895F9E118A6CD660093D652 /* GUPBank.m */; };
 		7895F9E418A6DA810093D652 /* data in Resources */ = {isa = PBXBuildFile; fileRef = 7895F9E318A6DA810093D652 /* data */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		2810FDBA18A6B81000BEFC7A /* GUPExercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUPExercise.h; sourceTree = "<group>"; };
 		2810FDBB18A6B81000BEFC7A /* GUPExercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUPExercise.m; sourceTree = "<group>"; };
+		286008A918A6F49F00C08F2F /* GUPTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUPTableViewController.h; sourceTree = "<group>"; };
+		286008AA18A6F49F00C08F2F /* GUPTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUPTableViewController.m; sourceTree = "<group>"; };
 		7895F9DD18A6C5080093D652 /* GUPRoutine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUPRoutine.h; sourceTree = "<group>"; };
 		7895F9DE18A6C5080093D652 /* GUPRoutine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUPRoutine.m; sourceTree = "<group>"; };
 		7895F9E018A6CD660093D652 /* GUPBank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUPBank.h; sourceTree = "<group>"; };
@@ -141,6 +144,8 @@
 				78DDE39418A69C700012E154 /* GUPAppDelegate.m */,
 				78DDE39918A69C700012E154 /* GUPViewController.h */,
 				78DDE39A18A69C700012E154 /* GUPViewController.m */,
+				286008A918A6F49F00C08F2F /* GUPTableViewController.h */,
+				286008AA18A6F49F00C08F2F /* GUPTableViewController.m */,
 				78DDE39C18A69C700012E154 /* Images.xcassets */,
 				78DDE38B18A69C700012E154 /* Supporting Files */,
 			);
@@ -276,6 +281,7 @@
 			files = (
 				2810FDBC18A6B81000BEFC7A /* GUPExercise.m in Sources */,
 				7895F9DF18A6C5080093D652 /* GUPRoutine.m in Sources */,
+				286008AB18A6F49F00C08F2F /* GUPTableViewController.m in Sources */,
 				7895F9E218A6CD660093D652 /* GUPBank.m in Sources */,
 				78DDE39118A69C700012E154 /* main.m in Sources */,
 				78DDE39518A69C700012E154 /* GUPAppDelegate.m in Sources */,

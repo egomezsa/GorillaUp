@@ -7,6 +7,7 @@
 //
 
 #import "GUPViewController.h"
+#import "GUPTableViewController.h"
 
 @interface GUPViewController ()
 
@@ -32,8 +33,8 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"craftPush"] ) {
-        UITableViewController *viewController = segue.destinationViewController;
-        //viewController.bank = self.ank;
+        GUPTableViewController * viewController = segue.destinationViewController;
+        [viewController setBank: self.bank];
     }
 }
 
