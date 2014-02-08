@@ -17,7 +17,6 @@
 		78DDE38F18A69C700012E154 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78DDE38D18A69C700012E154 /* InfoPlist.strings */; };
 		78DDE39118A69C700012E154 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DDE39018A69C700012E154 /* main.m */; };
 		78DDE39518A69C700012E154 /* GUPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DDE39418A69C700012E154 /* GUPAppDelegate.m */; };
-		78DDE39818A69C700012E154 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78DDE39618A69C700012E154 /* Main.storyboard */; };
 		78DDE39B18A69C700012E154 /* GUPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DDE39A18A69C700012E154 /* GUPViewController.m */; };
 		78DDE39D18A69C700012E154 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78DDE39C18A69C700012E154 /* Images.xcassets */; };
 		78DDE3A418A69C700012E154 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78DDE3A318A69C700012E154 /* XCTest.framework */; };
@@ -55,7 +54,6 @@
 		78DDE39218A69C700012E154 /* GorillaUp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GorillaUp-Prefix.pch"; sourceTree = "<group>"; };
 		78DDE39318A69C700012E154 /* GUPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GUPAppDelegate.h; sourceTree = "<group>"; };
 		78DDE39418A69C700012E154 /* GUPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GUPAppDelegate.m; sourceTree = "<group>"; };
-		78DDE39718A69C700012E154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78DDE39918A69C700012E154 /* GUPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GUPViewController.h; sourceTree = "<group>"; };
 		78DDE39A18A69C700012E154 /* GUPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GUPViewController.m; sourceTree = "<group>"; };
 		78DDE39C18A69C700012E154 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -139,8 +137,14 @@
 			children = (
 				2810FDB918A6B81000BEFC7A /* models */,
 				78DDE39318A69C700012E154 /* GUPAppDelegate.h */,
+				2819150918A6EA68007F151C /* Main.storyboard */,
 				78DDE39418A69C700012E154 /* GUPAppDelegate.m */,
-				78DDE39618A69C700012E154 /* Main.storyboard */,
+				2819150618A6DC3D007F151C /* GUPAddRoutineViewController.h */,
+				2819150718A6DC3D007F151C /* GUPAddRoutineViewController.m */,
+				2819150318A6C504007F151C /* GUPCraftTableViewController.h */,
+				2819150418A6C504007F151C /* GUPCraftTableViewController.m */,
+				2819150018A6C38A007F151C /* GUPCraftTableItem.h */,
+				2819150118A6C38A007F151C /* GUPCraftTableItem.m */,
 				78DDE39918A69C700012E154 /* GUPViewController.h */,
 				78DDE39A18A69C700012E154 /* GUPViewController.m */,
 				78DDE39C18A69C700012E154 /* Images.xcassets */,
@@ -255,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2819150B18A6EA68007F151C /* Main.storyboard in Resources */,
 				78DDE39D18A69C700012E154 /* Images.xcassets in Resources */,
 				78DDE38F18A69C700012E154 /* InfoPlist.strings in Resources */,
 				7895F9E418A6DA810093D652 /* data in Resources */,
@@ -277,10 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2819150818A6DC3D007F151C /* GUPAddRoutineViewController.m in Sources */,
 				2810FDBC18A6B81000BEFC7A /* GUPExercise.m in Sources */,
 				7895F9DF18A6C5080093D652 /* GUPRoutine.m in Sources */,
 				7895F9E218A6CD660093D652 /* GUPBank.m in Sources */,
 				78DDE39118A69C700012E154 /* main.m in Sources */,
+				2819150218A6C38A007F151C /* GUPCraftTableItem.m in Sources */,
+				2819150518A6C504007F151C /* GUPCraftTableViewController.m in Sources */,
 				78DDE39518A69C700012E154 /* GUPAppDelegate.m in Sources */,
 				78DDE39B18A69C700012E154 /* GUPViewController.m in Sources */,
 			);
@@ -305,20 +313,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		2819150918A6EA68007F151C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2819150A18A6EA68007F151C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		78DDE38D18A69C700012E154 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				78DDE38E18A69C700012E154 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		78DDE39618A69C700012E154 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				78DDE39718A69C700012E154 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		78DDE3AC18A69C700012E154 /* InfoPlist.strings */ = {
