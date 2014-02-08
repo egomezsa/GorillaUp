@@ -1,8 +1,5 @@
 GorillaUp
 =========
-Esteban G.
+Esteban Gomez, Joseph Rock, and Aaron Kawer
 
-Joseph R.
-
-Aaron K.
 ### An app to track progress in the gym.
