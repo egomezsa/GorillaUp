@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GUPBank.h"
 
 @interface GUPViewController : UIViewController
+
+
+@property GUPBank* ank;
+
 
 @end
