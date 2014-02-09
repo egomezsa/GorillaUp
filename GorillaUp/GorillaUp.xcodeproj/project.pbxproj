@@ -10,6 +10,8 @@
 		2810FDBC18A6B81000BEFC7A /* GUPExercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 2810FDBB18A6B81000BEFC7A /* GUPExercise.m */; };
 		286008AB18A6F49F00C08F2F /* GUPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286008AA18A6F49F00C08F2F /* GUPTableViewController.m */; };
 		2884002E18A6F8EA00C02D51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2884002C18A6F8EA00C02D51 /* Main.storyboard */; };
+		2884003118A6F95500C02D51 /* GUPCraftController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2884003018A6F95500C02D51 /* GUPCraftController.m */; };
+		2884003418A6FF9700C02D51 /* GUPRoutineAddController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2884003318A6FF9700C02D51 /* GUPRoutineAddController.m */; };
 		7895F9DF18A6C5080093D652 /* GUPRoutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7895F9DE18A6C5080093D652 /* GUPRoutine.m */; };
 		7895F9E218A6CD660093D652 /* GUPBank.m in Sources */ = {isa = PBXBuildFile; fileRef = 7895F9E118A6CD660093D652 /* GUPBank.m */; };
 		7895F9E418A6DA810093D652 /* data in Resources */ = {isa = PBXBuildFile; fileRef = 7895F9E318A6DA810093D652 /* data */; };
@@ -44,6 +46,10 @@
 		286008A918A6F49F00C08F2F /* GUPTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUPTableViewController.h; sourceTree = "<group>"; };
 		286008AA18A6F49F00C08F2F /* GUPTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUPTableViewController.m; sourceTree = "<group>"; };
 		2884002D18A6F8EA00C02D51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = GorillaUp/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		2884002F18A6F95500C02D51 /* GUPCraftController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GUPCraftController.h; path = ../GUPCraftController.h; sourceTree = "<group>"; };
+		2884003018A6F95500C02D51 /* GUPCraftController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GUPCraftController.m; path = ../GUPCraftController.m; sourceTree = "<group>"; };
+		2884003218A6FF9700C02D51 /* GUPRoutineAddController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUPRoutineAddController.h; sourceTree = "<group>"; };
+		2884003318A6FF9700C02D51 /* GUPRoutineAddController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUPRoutineAddController.m; sourceTree = "<group>"; };
 		7895F9DD18A6C5080093D652 /* GUPRoutine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUPRoutine.h; sourceTree = "<group>"; };
 		7895F9DE18A6C5080093D652 /* GUPRoutine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUPRoutine.m; sourceTree = "<group>"; };
 		7895F9E018A6CD660093D652 /* GUPBank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUPBank.h; sourceTree = "<group>"; };
@@ -96,7 +102,6 @@
 		2810FDB918A6B81000BEFC7A /* models */ = {
 			isa = PBXGroup;
 			children = (
-				2884002C18A6F8EA00C02D51 /* Main.storyboard */,
 				7895F9E018A6CD660093D652 /* GUPBank.h */,
 				7895F9E118A6CD660093D652 /* GUPBank.m */,
 				2810FDBA18A6B81000BEFC7A /* GUPExercise.h */,
@@ -142,8 +147,13 @@
 			children = (
 				7895F9E318A6DA810093D652 /* data */,
 				2810FDB918A6B81000BEFC7A /* models */,
+				2884002C18A6F8EA00C02D51 /* Main.storyboard */,
+				2884003218A6FF9700C02D51 /* GUPRoutineAddController.h */,
+				2884003318A6FF9700C02D51 /* GUPRoutineAddController.m */,
 				78DDE39318A69C700012E154 /* GUPAppDelegate.h */,
 				78DDE39418A69C700012E154 /* GUPAppDelegate.m */,
+				2884002F18A6F95500C02D51 /* GUPCraftController.h */,
+				2884003018A6F95500C02D51 /* GUPCraftController.m */,
 				78DDE39918A69C700012E154 /* GUPViewController.h */,
 				78DDE39A18A69C700012E154 /* GUPViewController.m */,
 				286008A918A6F49F00C08F2F /* GUPTableViewController.h */,
@@ -283,12 +293,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2810FDBC18A6B81000BEFC7A /* GUPExercise.m in Sources */,
+				2884003418A6FF9700C02D51 /* GUPRoutineAddController.m in Sources */,
 				7895F9DF18A6C5080093D652 /* GUPRoutine.m in Sources */,
 				286008AB18A6F49F00C08F2F /* GUPTableViewController.m in Sources */,
 				7895F9E218A6CD660093D652 /* GUPBank.m in Sources */,
 				78DDE39118A69C700012E154 /* main.m in Sources */,
 				78DDE39518A69C700012E154 /* GUPAppDelegate.m in Sources */,
 				78DDE39B18A69C700012E154 /* GUPViewController.m in Sources */,
+				2884003118A6F95500C02D51 /* GUPCraftController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +329,7 @@
 				2884002D18A6F8EA00C02D51 /* Base */,
 			);
 			name = Main.storyboard;
+			path = models;
 			sourceTree = "<group>";
 		};
 		78DDE38D18A69C700012E154 /* InfoPlist.strings */ = {
