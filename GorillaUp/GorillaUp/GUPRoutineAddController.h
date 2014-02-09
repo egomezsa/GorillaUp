@@ -13,4 +13,7 @@
 @interface GUPRoutineAddController : GUPViewController
 
 
+-(IBAction)respondToDoneButton:(id)sender;
+
+
 @end

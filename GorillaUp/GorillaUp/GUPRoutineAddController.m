@@ -20,7 +20,9 @@
 {
     [super viewDidLoad];
     
-
+    NSLog(@"happy load");
+    //[self.doneButton addTarget:self action:@selector(respondsToSelector:)
+              //forControlEvents:UIControlEventTouchUpInside];
 }
 
 
@@ -38,7 +40,13 @@
         GUPRoutine *newRoutine = [[GUPRoutine alloc] initWithOnlyTitle: formText];
         
     }
+    
 }
 
+- (IBAction)respondToDoneButton:(id)sender{
+    
+    NSLog(@"happy");
+    
+}
 @end
 

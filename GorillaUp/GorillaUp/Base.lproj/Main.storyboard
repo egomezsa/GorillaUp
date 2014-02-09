@@ -135,10 +135,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Routine" id="eig-Aj-Aqw">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="hWV-LK-zWl"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="hWV-LK-zWl">
+                            <connections>
+                                <action selector="respondToDoneButton:" destination="Jb7-jO-tGD" id="j5j-p1-cgp"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="doneButton" destination="hWV-LK-zWl" id="3Ir-nd-rQ1"/>
                         <outlet property="textField" destination="P4T-W9-ajT" id="jl1-z9-2IK"/>
                     </connections>
                 </viewController>
