@@ -35,7 +35,7 @@
 
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"craftPush"] ) {
+    if ([segue.identifier isEqualToString:@"craftPush"] || [segue.identifier isEqualToString:@"doPush"] ) {
         GUPTableViewController * viewController = segue.destinationViewController;
         [viewController setBank: self.bank];
     }
