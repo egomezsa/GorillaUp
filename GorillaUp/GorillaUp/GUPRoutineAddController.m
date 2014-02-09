@@ -21,8 +21,6 @@
     [super viewDidLoad];
     
     NSLog(@"happy load");
-    //[self.doneButton addTarget:self action:@selector(respondsToSelector:)
-              //forControlEvents:UIControlEventTouchUpInside];
 }
 
 
@@ -37,16 +35,13 @@
     if (sender != self.doneButton) return;
     NSString * formText = self.textField.text;
     if (formText.length > 0){
-        GUPRoutine *newRoutine = [[GUPRoutine alloc] initWithOnlyTitle: formText];
-        
+        [self.bank getOrNewRoutine: formText];
     }
-    
 }
 
-- (IBAction)respondToDoneButton:(id)sender{
-    
+- (IBAction)respondToDoneButton:(id)sender
+{
     NSLog(@"happy");
-    
 }
 @end
 
