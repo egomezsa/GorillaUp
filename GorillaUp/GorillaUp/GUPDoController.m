@@ -66,7 +66,11 @@
     
     GUPRoutine * selected_routine = [self.bank.routines objectForKey:routine_name];
                         
-                            
+    GUPTableViewController *controller = [[GUPTableViewController alloc] init];
+    controller.bank = self.bank;
+    
+    [[self navigationController] pushViewController:controller animated:YES];
+
     NSLog(@"%@", routine_name);
 }
 
