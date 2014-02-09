@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "GUPBank.h"
 
-@interface GUPTableViewController : UITableViewController
+@interface GUPTableViewController : UITableViewController <UITableViewDelegate>
 
 @property GUPBank* bank;
 

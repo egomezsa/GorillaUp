@@ -58,6 +58,18 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+    
+    NSString *routine_name = [cell textLabel].text;
+    
+    GUPRoutine * selected_routine = [self.bank.routines objectForKey:routine_name];
+                        
+                            
+    NSLog(@"%@", routine_name);
+}
+
 /*
  // Override to support conditional editing of the table view.
  - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath

@@ -102,4 +102,9 @@
     
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"You pressed row %i", indexPath.item);
+}
+
 @end
