@@ -19,13 +19,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
-    self.bank = [[GUPBank alloc] init];
-    
-    NSLog(@"Hello");
-    
-    
-    
+    if (self.bank == nil)
+    {
+        self.bank = [[GUPBank alloc] init];
+    }
+
+
 }
 
 - (void)didReceiveMemoryWarning
