@@ -11,7 +11,6 @@
 
 @interface GUPViewController : UIViewController
 
-
 @property GUPBank* bank;
 
 
