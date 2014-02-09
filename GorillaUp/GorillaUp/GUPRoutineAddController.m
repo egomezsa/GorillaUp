@@ -41,6 +41,7 @@
 
 - (IBAction)respondToDoneButton:(id)sender
 {
+    [self.navigationController popViewControllerAnimated:YES] ;
     NSLog(@"happy");
 }
 @end
