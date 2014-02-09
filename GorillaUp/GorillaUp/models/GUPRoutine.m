@@ -28,9 +28,10 @@
     if(self){
         self.name = n;
         self.exercises = [[NSMutableArray alloc] init];
+        GUPExercise * emptyExercise = [[GUPExercise alloc] initWithOnlyTitle:@"Empty"];
+        [self.exercises addObject:emptyExercise];
     }
     return self;
-
 }
 
 
