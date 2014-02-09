@@ -95,7 +95,7 @@
 // In a story board-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"craftPush"] ) {
+    if ([segue.identifier isEqualToString:@"craftPush"] || [segue.identifier isEqualToString:@"routinePush"]) {
         GUPTableViewController * viewController = segue.destinationViewController;
         [viewController setBank: self.bank];
     }

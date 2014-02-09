@@ -27,7 +27,7 @@
     self = [super init];
     if(self){
         self.name = n;
-        self.exercises = [NSMutableArray init];
+        self.exercises = [[NSMutableArray alloc] init];
     }
     return self;
 
