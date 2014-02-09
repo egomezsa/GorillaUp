@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>UILaunchImageFile</key>
-	<string>MyLaunchImage</string>
+	<string>Default.png</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

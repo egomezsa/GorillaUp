@@ -32,17 +32,19 @@
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     [super prepareForSegue: segue sender:sender];
-    if (sender != self.doneButton) return;
-    NSString * formText = self.textField.text;
-    if (formText.length > 0){
-        [self.bank getOrNewRoutine: formText];
-    }
+
 }
 
 - (IBAction)respondToDoneButton:(id)sender
 {
-    [self.navigationController popViewControllerAnimated:YES] ;
+    //if (sender != self.doneButton) return;
+    NSString * formText = self.textField.text;
+    if (formText.length > 0){
+        [self.bank getOrNewRoutine: formText];
+    }
     NSLog(@"happy");
+
+    [self.navigationController popViewControllerAnimated:YES] ;
 }
 @end
 
