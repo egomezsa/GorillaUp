@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "GUPViewController.h"
+#import "GUPRoutine.h"
 
 @interface GUPRoutineAddController : GUPViewController
+
 
 @end

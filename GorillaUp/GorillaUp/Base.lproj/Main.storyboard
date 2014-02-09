@@ -124,11 +124,23 @@
                     <view key="view" contentMode="scaleToFill" id="jwj-oC-pqx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P4T-W9-ajT">
+                                <rect key="frame" x="20" y="135" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Routine" id="eig-Aj-Aqw">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="hWV-LK-zWl"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="doneButton" destination="hWV-LK-zWl" id="3Ir-nd-rQ1"/>
+                        <outlet property="textField" destination="P4T-W9-ajT" id="jl1-z9-2IK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yby-Op-jlq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

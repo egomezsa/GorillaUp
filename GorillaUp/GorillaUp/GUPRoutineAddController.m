@@ -9,6 +9,8 @@
 #import "GUPRoutineAddController.h"
 
 @interface GUPRoutineAddController ()
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *doneButton;
 
 @end
 
@@ -23,6 +25,17 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    [super prepareForSegue: segue sender:sender];
+    if (sender != self.doneButton) return;
+    NSString * formText = self.textField.text;
+    if (formText.length > 0){
+        GUPRoutine *newRoutine = [[GUPRoutine alloc] initWithOnlyTitle: formText];
+        
+    }
 }
 
 @end

@@ -13,7 +13,7 @@
 @property (nonatomic) NSString * name;
 @property (nonatomic) NSMutableArray * exercises;
 
-
+- (id)initWithOnlyTitle:(NSString*)n;
 - (id)initWithTitle:(NSString*)n withExercises: (NSMutableArray *) exer;
 - (id)init;
 
