@@ -7,6 +7,7 @@
 //
 
 #import "GUPRoutine.h"
+#import "GUPExercise.h"
 
 @implementation GUPRoutine
 

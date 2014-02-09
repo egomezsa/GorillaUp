@@ -15,6 +15,8 @@
 		2884003418A6FF9700C02D51 /* GUPRoutineAddController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2884003318A6FF9700C02D51 /* GUPRoutineAddController.m */; };
 		7833E46918A741A100FDCD9E /* GUPDoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7833E46818A741A100FDCD9E /* GUPDoController.m */; };
 		7833E46C18A7552800FDCD9E /* GUPDetailRoutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7833E46B18A7552800FDCD9E /* GUPDetailRoutine.m */; };
+		7833E46F18A775E000FDCD9E /* GUPExerciseDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 7833E46E18A775E000FDCD9E /* GUPExerciseDetail.m */; };
+		7833E47118A7821100FDCD9E /* ExerciseDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7833E47018A7821100FDCD9E /* ExerciseDetailView.xib */; };
 		7895F9DF18A6C5080093D652 /* GUPRoutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7895F9DE18A6C5080093D652 /* GUPRoutine.m */; };
 		7895F9E218A6CD660093D652 /* GUPBank.m in Sources */ = {isa = PBXBuildFile; fileRef = 7895F9E118A6CD660093D652 /* GUPBank.m */; };
 		7895F9EA18A700C60093D652 /* fakeData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7895F9E918A700C60093D652 /* fakeData.plist */; };
@@ -58,6 +60,9 @@
 		7833E46818A741A100FDCD9E /* GUPDoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUPDoController.m; sourceTree = "<group>"; };
 		7833E46A18A7552800FDCD9E /* GUPDetailRoutine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUPDetailRoutine.h; sourceTree = "<group>"; };
 		7833E46B18A7552800FDCD9E /* GUPDetailRoutine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUPDetailRoutine.m; sourceTree = "<group>"; };
+		7833E46D18A775E000FDCD9E /* GUPExerciseDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUPExerciseDetail.h; sourceTree = "<group>"; };
+		7833E46E18A775E000FDCD9E /* GUPExerciseDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUPExerciseDetail.m; sourceTree = "<group>"; };
+		7833E47018A7821100FDCD9E /* ExerciseDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExerciseDetailView.xib; sourceTree = "<group>"; };
 		7895F9DD18A6C5080093D652 /* GUPRoutine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUPRoutine.h; sourceTree = "<group>"; };
 		7895F9DE18A6C5080093D652 /* GUPRoutine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUPRoutine.m; sourceTree = "<group>"; };
 		7895F9E018A6CD660093D652 /* GUPBank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUPBank.h; sourceTree = "<group>"; };
@@ -156,6 +161,9 @@
 			children = (
 				2810FDB918A6B81000BEFC7A /* models */,
 				2884002C18A6F8EA00C02D51 /* Main.storyboard */,
+				7833E46D18A775E000FDCD9E /* GUPExerciseDetail.h */,
+				7833E46E18A775E000FDCD9E /* GUPExerciseDetail.m */,
+				7833E47018A7821100FDCD9E /* ExerciseDetailView.xib */,
 				2884003218A6FF9700C02D51 /* GUPRoutineAddController.h */,
 				2884003318A6FF9700C02D51 /* GUPRoutineAddController.m */,
 				78DDE39318A69C700012E154 /* GUPAppDelegate.h */,
@@ -286,6 +294,7 @@
 				78DDE39D18A69C700012E154 /* Images.xcassets in Resources */,
 				7895F9EA18A700C60093D652 /* fakeData.plist in Resources */,
 				280D253A18A7689A00B891DB /* Logo.png in Resources */,
+				7833E47118A7821100FDCD9E /* ExerciseDetailView.xib in Resources */,
 				78DDE38F18A69C700012E154 /* InfoPlist.strings in Resources */,
 				2884002E18A6F8EA00C02D51 /* Main.storyboard in Resources */,
 			);
@@ -311,6 +320,7 @@
 				7895F9DF18A6C5080093D652 /* GUPRoutine.m in Sources */,
 				286008AB18A6F49F00C08F2F /* GUPTableViewController.m in Sources */,
 				7895F9E218A6CD660093D652 /* GUPBank.m in Sources */,
+				7833E46F18A775E000FDCD9E /* GUPExerciseDetail.m in Sources */,
 				7833E46918A741A100FDCD9E /* GUPDoController.m in Sources */,
 				78DDE39118A69C700012E154 /* main.m in Sources */,
 				78DDE39518A69C700012E154 /* GUPAppDelegate.m in Sources */,

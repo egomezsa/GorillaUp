@@ -7,6 +7,7 @@
 //
 
 #import "GUPDetailRoutine.h"
+#import "GUPExerciseDetail.h"
 
 @interface GUPDetailRoutine ()
 @property NSMutableArray * exercises_names;
@@ -84,10 +85,30 @@
     return cell;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    NSLog(@"ASDFASD");
+    if ([segue.identifier isEqualToString:@"chooseExe"]) {
+        UITableViewCell * cell = (UITableViewCell *)sender;
+        
+        GUPExerciseDetail * viewController = segue.destinationViewController;
+        viewController.bank = self.bank;
+        NSString *ex_name = [cell textLabel].text;
+        viewController.exDisplayed =[self.bank.exercises objectForKey:ex_name];
+        
+    }
+}
+
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *exer_string = [self.tableView cellForRowAtIndexPath:indexPath].textLabel.text;
     NSLog(@"Doing Exercise %@",exer_string);
+    GUPExerciseDetail *viewController = [[GUPExerciseDetail alloc] initWithNibName:@"ExerciseDetailView" bundle:nil];
+    viewController.bank = self.bank;
+    
+    viewController.exDisplayed =[self.bank.exercises objectForKey:exer_string];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 /*
