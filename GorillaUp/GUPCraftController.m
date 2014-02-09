@@ -62,7 +62,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     
-    NSMutableArray *routineNames = self.bank.getRoutineNames;
+    NSMutableArray *routineNames = [self.bank getRoutineNames];
     cell.textLabel.text = [routineNames objectAtIndex:indexPath.row];
     return cell;
 }

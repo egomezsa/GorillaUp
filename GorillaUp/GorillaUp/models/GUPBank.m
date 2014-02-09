@@ -81,7 +81,8 @@
 }
 
 - (NSMutableArray * ) getRoutineNames{
-    return [[NSMutableArray alloc] initWithArray:[self.routines allKeys]];
+    NSMutableArray* array = [[NSMutableArray alloc] initWithArray:[self.routines allKeys]];
+    return array;
 }
 
 
