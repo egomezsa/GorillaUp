@@ -20,9 +20,9 @@
 {
     [super viewDidLoad];
     
-        NSLog(@"hello");
 
 }
+
 
 - (void)didReceiveMemoryWarning
 {
