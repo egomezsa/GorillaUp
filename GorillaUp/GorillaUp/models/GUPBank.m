@@ -75,8 +75,6 @@
                 }
             }
         }
-        NSLog(@"asdf");
-
     }
     return self;
     
