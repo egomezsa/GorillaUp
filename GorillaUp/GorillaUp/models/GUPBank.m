@@ -16,9 +16,16 @@
     self = [super init];
     if(self){
         
-        NSString *filePath = @"../Data/fakeData.stub";
-        NSMutableDictionary* plistDict = [[NSMutableDictionary alloc] initWithContentsOfFile:filePath];
-        NSMutableDictionary* routines, *exercises, *subDict;
+        NSString * plistFile = [[NSBundle mainBundle] pathForResource:@"fakeData"
+                                                               ofType:@"plist"];
+        NSMutableDictionary * plistDict =[[NSMutableDictionary alloc] initWithContentsOfFile:plistFile];
+        if (!plistDict) {
+                plistDict = [NSMutableDictionary new];
+                [plistDict writeToFile:plistFile atomically:YES];
+        }
+        
+        
+        NSMutableDictionary *subDict;
         
         GUPRoutine * newRoutine;
         GUPExercise * newExercise;
@@ -26,9 +33,9 @@
         for(NSString* key in plistDict)
         {
             subDict = [plistDict objectForKey:key];
-            if ([key isEqualToString:@"exercises"]){
+            if ([key isEqualToString:@"Exercises"]){
                 
-                exercises = [NSMutableDictionary dictionary];
+                self.exercises = [NSMutableDictionary dictionary];
                 
                 for (NSString* exercise in subDict){
                     newExercise = [[GUPExercise alloc] init];
@@ -42,27 +49,32 @@
                     newExercise.restTime = [[numbers objectAtIndex:2] integerValue];
                     newExercise.weight = [[numbers objectAtIndex:3] integerValue];
                     
-                    [exercises setObject:newExercise forKey:exercise];
+                    [self.exercises setObject:newExercise forKey:exercise];
                     
                 }
-            }else if ([key isEqualToString:@"routines"]){
-                routines = [NSMutableDictionary dictionary];
+            }else if ([key isEqualToString:@"Routines"]){
+                self.routines = [NSMutableDictionary dictionary];
                 
                 for (NSString * routine_name in subDict)
                 {
                     newRoutine = [[GUPRoutine alloc] init];
-                    NSArray *routine_detail = [subDict objectForKey: routine_name];
+                    NSArray *routine_detail = [[subDict objectForKey: routine_name] componentsSeparatedByString:@","];
+                    
+                    
                     
                     newRoutine.name = routine_name;
-                    newRoutine.exercises = [[NSMutableArray alloc] initWithObjects:
-                                            [exercises objectForKey:[routine_detail objectAtIndex:0]],
-                                            [exercises objectForKey:[routine_detail objectAtIndex:1]],
-                                            nil];
-                    [routines setObject:newRoutine forKey:routine_name];
+                    newRoutine.exercises = [[NSMutableArray alloc] init];
+                    
+                    for (int r_index = 0 ; r_index < [routine_detail count]; r_index++){
+                        GUPExercise *local = [self.exercises objectForKey:[routine_detail objectAtIndex:r_index]];
+                        [newRoutine.exercises addObject:local];
+                        
+                    }
+
+                    [self.routines setObject:newRoutine forKey:routine_name];
                 }
             }
         }
-
     }
     return self;
     
