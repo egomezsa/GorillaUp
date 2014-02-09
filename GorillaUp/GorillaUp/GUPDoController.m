@@ -61,25 +61,14 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"DoRoutine"]) {
+        UITableViewCell * cell = (UITableViewCell *)sender;
+
         GUPDetailRoutine * viewController = segue.destinationViewController;
         viewController.bank = self.bank;
-        viewController.routineDisplayed  = self.last_clicked;
+        NSString *routine_name = [cell textLabel].text;
+        viewController.routineDisplayed =[self.bank.routines objectForKey:routine_name];
         
     }
-}
-
-
-    
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-    
-    NSString *routine_name = [cell textLabel].text;
-    
-    self.last_clicked =[self.bank.routines objectForKey:routine_name];
-    
-
-
 }
 
 /*
