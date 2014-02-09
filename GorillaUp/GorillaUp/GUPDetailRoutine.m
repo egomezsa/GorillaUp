@@ -1,33 +1,42 @@
 //
-//  GUPDoController.m
+//  GUPDetailRoutine.m
 //  GorillaUp
 //
-//  Created by Esteban Gomez on 2/8/14.
+//  Created by Esteban Gomez on 2/9/14.
 //  Copyright (c) 2014 BM1. All rights reserved.
 //
 
-#import "GUPDoController.h"
 #import "GUPDetailRoutine.h"
 
-@interface GUPDoController ()
-
+@interface GUPDetailRoutine ()
+@property NSMutableArray * exercises_names;
 @end
 
-@implementation GUPDoController
+@implementation GUPDetailRoutine
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithStyle:(UITableViewStyle)style
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
+        
     }
     return self;
 }
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"ExerCell"];
+    
+    self.exercises_names = [[NSMutableArray alloc] init];
+    int numb_exercises = [self.routineDisplayed.exercises count];
+    
+    for (int i = 0 ; i < numb_exercises ; i++){
+        GUPExercise *ge = [self.routineDisplayed.exercises objectAtIndex:i];
+        [self.exercises_names addObject: ge.name];
+    }
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,29 +59,25 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"DoCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *cellIdentifier = @"ExerCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
+    if (!cell)
+        cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleSubtitle reuseIdentifier: cellIdentifier];
     
-    NSMutableArray *routineNames = [self.bank getRoutineNames];
-    cell.textLabel.text = [routineNames objectAtIndex:indexPath.row];
+    GUPExercise * ex = [self.routineDisplayed.exercises objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = ex.name;
+    cell.detailTextLabel.text = [ex instructions];
+
+    
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-    
-    NSString *routine_name = [cell textLabel].text;
-    
-    GUPRoutine * selected_routine = [self.bank.routines objectForKey:routine_name];
-                        
-    GUPDetailRoutine *controller = [[GUPDetailRoutine alloc] init];
-    controller.bank = self.bank;
-    controller.routineDisplayed = selected_routine;
-    
-    [[self navigationController] pushViewController:controller animated:YES];
-
+    NSString *exer_string = [self.tableView cellForRowAtIndexPath:indexPath].textLabel.text;
+    NSLog(@"Doing Exercise %@",exer_string);
 }
 
 /*

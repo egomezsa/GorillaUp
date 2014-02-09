@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GorillaUp/GUPDoController.m"
-            timestampString = "413617046.934966"
+            timestampString = "413622900.236953"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "-tableView:didSelectRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,12 +42,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GorillaUp/GUPDoController.m"
-            timestampString = "413618178.010333"
+            timestampString = "413622900.236953"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "-tableView:didSelectRowAtIndexPath:"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "-initWithNibName:bundle:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GorillaUp/GUPDetailRoutine.m"
+            timestampString = "413621713.705226"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "-initWithStyle:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
