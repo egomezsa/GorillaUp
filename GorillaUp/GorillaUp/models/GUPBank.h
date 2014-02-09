@@ -7,16 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GUPRoutine.h"
+#import "GUPExercise.h"
 
 @interface GUPBank : NSObject
 
 @property NSMutableDictionary * routines;
 @property NSMutableDictionary * exercises;
-    
-
-
 
 - (id) init;
 - (NSMutableArray * ) getRoutineNames;
+- (GUPRoutine*) getOrNewRoutine: (NSString*)routineName;
+- (GUPExercise*) getOrNewExercise: (NSString*)exerciseName;
 
 @end

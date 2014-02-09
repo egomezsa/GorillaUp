@@ -51,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="654" y="-281"/>
+            <point key="canvasLocation" x="562" y="-281"/>
         </scene>
         <!--Craft Controller - Routines-->
         <scene sceneID="XJ5-wx-TiQ">
@@ -93,7 +93,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="brF-bw-0pq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1064" y="-281"/>
+            <point key="canvasLocation" x="1002" y="-281"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UGX-l6-vXC">
@@ -144,7 +144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yby-Op-jlq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1749" y="-266"/>
+            <point key="canvasLocation" x="1411" y="-281"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

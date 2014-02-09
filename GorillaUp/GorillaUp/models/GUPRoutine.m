@@ -23,5 +23,15 @@
     return [self initWithTitle:@"" withExercises: nil];
 }
 
+- (id)initWithOnlyTitle:(NSString*)n{
+    self = [super init];
+    if(self){
+        self.name = n;
+        self.exercises = [NSMutableArray init];
+    }
+    return self;
+
+}
+
 
 @end

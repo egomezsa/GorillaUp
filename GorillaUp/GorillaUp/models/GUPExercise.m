@@ -11,6 +11,12 @@
 
 @implementation GUPExercise 
 
+-(id)initWithOnlyTitle: (NSString*)n
+{
+    return [self initWithTitle:n sets:0 reps:0 weight:0 rest:0];
+}
+
+
 - (id)initWithTitle: (NSString*)n sets:(int)s reps:(int)rps weight:(int)wt rest:(int)res
 {
     self = [super init];

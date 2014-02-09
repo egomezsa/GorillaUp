@@ -81,10 +81,37 @@
 }
 
 - (NSMutableArray * ) getRoutineNames{
-    
     return [[NSMutableArray alloc] initWithArray:[self.routines allKeys]];
-    
 }
 
 
+- (GUPRoutine*) getOrNewRoutine: (NSString*)routineName;
+{
+    GUPRoutine *routine = [self.routines objectForKey:routineName];
+    if(routine == nil){
+        routine = [[GUPRoutine alloc] initWithOnlyTitle: routineName];
+        [self.routines setObject:routine forKey:routineName];
+    }
+    return routine;
+}
+
+- (GUPExercise*) getOrNewExercise: (NSString*)exerciseName;
+{
+    GUPExercise *exercise = [self.exercises objectForKey:exerciseName];
+    if(exercise == nil){
+        exercise = [[GUPExercise alloc] initWithOnlyTitle: exerciseName];
+        [self.exercises setObject:exercise forKey:exerciseName];
+    }
+    return exercise;
+}
+
 @end
+
+
+
+
+
+
+
+
+
