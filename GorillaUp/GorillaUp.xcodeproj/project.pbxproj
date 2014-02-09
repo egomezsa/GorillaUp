@@ -12,7 +12,7 @@
 		2884002E18A6F8EA00C02D51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2884002C18A6F8EA00C02D51 /* Main.storyboard */; };
 		7895F9DF18A6C5080093D652 /* GUPRoutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7895F9DE18A6C5080093D652 /* GUPRoutine.m */; };
 		7895F9E218A6CD660093D652 /* GUPBank.m in Sources */ = {isa = PBXBuildFile; fileRef = 7895F9E118A6CD660093D652 /* GUPBank.m */; };
-		7895F9E418A6DA810093D652 /* data in Resources */ = {isa = PBXBuildFile; fileRef = 7895F9E318A6DA810093D652 /* data */; };
+		7895F9EA18A700C60093D652 /* fakeData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7895F9E918A700C60093D652 /* fakeData.plist */; };
 		78DDE38518A69C700012E154 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78DDE38418A69C700012E154 /* Foundation.framework */; };
 		78DDE38718A69C700012E154 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78DDE38618A69C700012E154 /* CoreGraphics.framework */; };
 		78DDE38918A69C700012E154 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78DDE38818A69C700012E154 /* UIKit.framework */; };
@@ -48,7 +48,7 @@
 		7895F9DE18A6C5080093D652 /* GUPRoutine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUPRoutine.m; sourceTree = "<group>"; };
 		7895F9E018A6CD660093D652 /* GUPBank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUPBank.h; sourceTree = "<group>"; };
 		7895F9E118A6CD660093D652 /* GUPBank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUPBank.m; sourceTree = "<group>"; };
-		7895F9E318A6DA810093D652 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
+		7895F9E918A700C60093D652 /* fakeData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = fakeData.plist; path = data/fakeData.plist; sourceTree = "<group>"; };
 		78DDE38118A69C700012E154 /* GorillaUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GorillaUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78DDE38418A69C700012E154 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		78DDE38618A69C700012E154 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -140,7 +140,6 @@
 		78DDE38A18A69C700012E154 /* GorillaUp */ = {
 			isa = PBXGroup;
 			children = (
-				7895F9E318A6DA810093D652 /* data */,
 				2810FDB918A6B81000BEFC7A /* models */,
 				78DDE39318A69C700012E154 /* GUPAppDelegate.h */,
 				78DDE39418A69C700012E154 /* GUPAppDelegate.m */,
@@ -157,6 +156,7 @@
 		78DDE38B18A69C700012E154 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7895F9E918A700C60093D652 /* fakeData.plist */,
 				78DDE38C18A69C700012E154 /* GorillaUp-Info.plist */,
 				78DDE38D18A69C700012E154 /* InfoPlist.strings */,
 				78DDE39018A69C700012E154 /* main.m */,
@@ -261,8 +261,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				78DDE39D18A69C700012E154 /* Images.xcassets in Resources */,
+				7895F9EA18A700C60093D652 /* fakeData.plist in Resources */,
 				78DDE38F18A69C700012E154 /* InfoPlist.strings in Resources */,
-				7895F9E418A6DA810093D652 /* data in Resources */,
 				2884002E18A6F8EA00C02D51 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
