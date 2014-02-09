@@ -14,6 +14,16 @@
 
 @implementation GUPDetailRoutine
 
+- (id) init{
+    
+    self = [super init];
+    if(self){
+
+    }
+    return self;
+    
+}
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -26,9 +36,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"ExerCell"];
-    
     self.exercises_names = [[NSMutableArray alloc] init];
     int numb_exercises = [self.routineDisplayed.exercises count];
     
@@ -36,6 +43,9 @@
         GUPExercise *ge = [self.routineDisplayed.exercises objectAtIndex:i];
         [self.exercises_names addObject: ge.name];
     }
+    
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"ExerCell"];
+    
     // Do any additional setup after loading the view.
 }
 

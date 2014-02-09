@@ -10,7 +10,7 @@
 #import "GUPDetailRoutine.h"
 
 @interface GUPDoController ()
-
+@property GUPRoutine * last_clicked;
 @end
 
 @implementation GUPDoController
@@ -59,19 +59,26 @@
     return cell;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"DoRoutine"]) {
+        GUPDetailRoutine * viewController = segue.destinationViewController;
+        viewController.bank = self.bank;
+        viewController.routineDisplayed  = self.last_clicked;
+        
+    }
+}
+
+
+    
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
     
     NSString *routine_name = [cell textLabel].text;
     
-    GUPRoutine * selected_routine = [self.bank.routines objectForKey:routine_name];
-                        
-    GUPDetailRoutine *controller = [[GUPDetailRoutine alloc] init];
-    controller.bank = self.bank;
-    controller.routineDisplayed = selected_routine;
+    self.last_clicked =[self.bank.routines objectForKey:routine_name];
     
-    [[self navigationController] pushViewController:controller animated:YES];
+
 
 }
 
