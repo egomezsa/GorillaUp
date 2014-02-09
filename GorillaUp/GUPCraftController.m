@@ -1,18 +1,18 @@
 //
-//  GUPTableViewController.m
+//  GUPCraftController.m
 //  GorillaUp
 //
 //  Created by Aaron Kawer on 2/8/14.
 //  Copyright (c) 2014 BM1. All rights reserved.
 //
 
-#import "GUPTableViewController.h"
+#import "GUPCraftController.h"
 
-@interface GUPTableViewController ()
+@interface GUPCraftController ()
 
 @end
 
-@implementation GUPTableViewController
+@implementation GUPCraftController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -48,6 +48,22 @@
     return 1;
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    // Return the number of rows in the section.
+    return [self.bank.routines count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"CraftRoutineCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    
+    NSMutableArray *routineNames = self.bank.getRoutineNames;
+    cell.textLabel.text = [routineNames objectAtIndex:indexPath.row];
+    return cell;
+}
 
 /*
 // Override to support conditional editing of the table view.
@@ -88,16 +104,16 @@
 }
 */
 
+/*
 #pragma mark - Navigation
 
 // In a story board-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"craftPush"] ) {
-        GUPTableViewController * viewController = segue.destinationViewController;
-        [viewController setBank: self.bank];
-    }
-    
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
 }
+
+ */
 
 @end
