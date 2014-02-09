@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280D253218A751AC00B891DB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 280D253118A751AC00B891DB /* Default.png */; };
 		2810FDBC18A6B81000BEFC7A /* GUPExercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 2810FDBB18A6B81000BEFC7A /* GUPExercise.m */; };
 		286008AB18A6F49F00C08F2F /* GUPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286008AA18A6F49F00C08F2F /* GUPTableViewController.m */; };
 		2884002E18A6F8EA00C02D51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2884002C18A6F8EA00C02D51 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		280D253118A751AC00B891DB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../../../../Downloads/Default.png; sourceTree = "<group>"; };
 		2810FDBA18A6B81000BEFC7A /* GUPExercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUPExercise.h; sourceTree = "<group>"; };
 		2810FDBB18A6B81000BEFC7A /* GUPExercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUPExercise.m; sourceTree = "<group>"; };
 		286008A918A6F49F00C08F2F /* GUPTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUPTableViewController.h; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		78DDE37818A69C700012E154 = {
 			isa = PBXGroup;
 			children = (
+				280D253118A751AC00B891DB /* Default.png */,
 				78DDE38A18A69C700012E154 /* GorillaUp */,
 				78DDE3A918A69C700012E154 /* GorillaUpTests */,
 				78DDE38318A69C700012E154 /* Frameworks */,
@@ -279,6 +282,7 @@
 				7895F9EA18A700C60093D652 /* fakeData.plist in Resources */,
 				78DDE38F18A69C700012E154 /* InfoPlist.strings in Resources */,
 				2884002E18A6F8EA00C02D51 /* Main.storyboard in Resources */,
+				280D253218A751AC00B891DB /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
