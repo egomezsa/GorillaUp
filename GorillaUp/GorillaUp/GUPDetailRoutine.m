@@ -70,16 +70,23 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+     NSLog(@"Cell for row function called");
     static NSString *cellIdentifier = @"ExerCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
-    
-    if (!cell)
-        cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleSubtitle reuseIdentifier: cellIdentifier];
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+//    
+//    if (!cell)
+//    {
+//        cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleSubtitle reuseIdentifier: cellIdentifier];
+//        NSLog(@"New cell initialized");
+//    }
+//    
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     
     GUPExercise * ex = [self.routineDisplayed.exercises objectAtIndex:indexPath.row];
     
     cell.textLabel.text = ex.name;
-    cell.detailTextLabel.text = [ex instructions];
+    [cell.detailTextLabel setText: [ex instructions]];
+    
 
     
     return cell;
